@@ -3,6 +3,7 @@ NPM	: 2213025035
 Tugas Praktikum 1 Web Framework
 1.	Gambaran Website
 Website Sistem Informasi Diri ini akan memiliki tampilan bersih dan profesional. Header berisi judul "CV Online [Nama Anda]" dan navbar dengan menu Home, Tentang Saya, Portofolio, dan Kontak. Halaman Home menampilkan sambutan, foto profil, dan tombol seperti "Lihat Portofolio Saya". Tentang Saya berisi informasi pribadi, riwayat pendidikan, pengalaman kerja, dan skill. Portofolio menampilkan daftar proyek dengan judul, deskripsi, dan gambar. Kontak menyediakan formulir pesan dan informasi kontak seperti email atau LinkedIn. Footer berisi hak cipta dan ikon media sosial. Tampilan menggunakan warna profesional (biru, abu-abu, putih) dan font mudah dibaca seperti Roboto. Website dirancang responsif untuk desktop, tablet, dan mobile.
+
 2.	Timeline Rancangan
 Minggu 1: Persiapan
 a.	Riset kebutuhan website (fitur, konten, dan target pengguna).
@@ -18,7 +19,8 @@ b.	Buat tampilan untuk halaman Tentang Saya (informasi pribadi, riwayat pendidik
 c.	Buat tampilan untuk halaman Portofolio (daftar proyek dengan judul, deskripsi, dan gambar).
 d.	Buat tampilan untuk halaman Kontak (formulir kontak dan informasi kontak tambahan).
 e.	Setup routing di app/Config/Routes.php untuk menghubungkan URL dengan controller.
-f.	Buat controller dasar untuk setiap halaman (Home, About, Portfolio, Contact________________________________________
+f.	Buat controller dasar untuk setiap halaman (Home, About, Portfolio, Contact)
+________________________________________
 Minggu 3: Backend dan Database
 a.	Buat model untuk mengelola data (misalnya, PortfolioModel untuk data portofolio).
 b.	Hubungkan model dengan database dan buat fungsi untuk mengambil data.
@@ -33,6 +35,7 @@ c.	Optimasi tampilan (CSS, JavaScript, dan gambar) untuk meningkatkan kecepatan 
 d.	Pastikan website responsive (tampilan bagus di desktop, tablet, dan mobile).
 e.	Minta feedback dari teman atau rekan tentang tampilan dan fungsionalitas.
 f.	Lakukan perbaikan berdasarkan feedback yang diterima.
+________________________________________
 Minggu 5: Deployment
 a.	Siapkan hosting dan domain (jika belum ada).
 b.	Export database dan upload ke server hosting.
