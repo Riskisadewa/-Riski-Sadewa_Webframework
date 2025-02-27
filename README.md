@@ -5,6 +5,7 @@ Tugas Praktikum 1 Web Framework
 Website Sistem Informasi Diri ini akan memiliki tampilan bersih dan profesional. Header berisi judul "CV Online [Nama Anda]" dan navbar dengan menu Home, Tentang Saya, Portofolio, dan Kontak. Halaman Home menampilkan sambutan, foto profil, dan tombol seperti "Lihat Portofolio Saya". Tentang Saya berisi informasi pribadi, riwayat pendidikan, pengalaman kerja, dan skill. Portofolio menampilkan daftar proyek dengan judul, deskripsi, dan gambar. Kontak menyediakan formulir pesan dan informasi kontak seperti email atau LinkedIn. Footer berisi hak cipta dan ikon media sosial. Tampilan menggunakan warna profesional (biru, abu-abu, putih) dan font mudah dibaca seperti Roboto. Website dirancang responsif untuk desktop, tablet, dan mobile.
 
 2.	Timeline Rancangan
+   
 Minggu 1: Persiapan
 a.	Riset kebutuhan website (fitur, konten, dan target pengguna).
 b.	Buat sketsa desain (wireframe) untuk halaman Home, Tentang Saya, Portofolio, dan Kontak.
