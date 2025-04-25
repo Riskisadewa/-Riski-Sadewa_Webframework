@@ -24,7 +24,7 @@
             </tr>
         </thead>
         <tbody>
-            <?php $no = 1; foreach ($blog as $b) : ?>
+            <?php $no = 1; foreach ($porto as $b) : ?>
                 <tr>
                     <td><?= $no++; ?></td>
                     <td><?= esc($b['judul']); ?></td>

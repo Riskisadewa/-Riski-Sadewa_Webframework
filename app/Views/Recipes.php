@@ -43,7 +43,6 @@
                                         <li><a href="about">about</a></li>
                                         <li><a href="Recipes">Recipes</a></li>
                                         <li><a href="portofolio">portofolio</a></li>
-                                        <li><a href="contact">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>

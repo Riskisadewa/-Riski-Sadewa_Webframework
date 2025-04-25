@@ -15,12 +15,8 @@ class Admin extends BaseController
 
     public function index()
     {
-        helper(['text']); 
-        $data = [
-            'blog' => $this->portoModel->getBlog()
-        ];
-
-        return view('/admin/dashboard', $data);
+        $data['portofolio'] = $this->portoModel->findAll();
+        return view('portofolio', $data);
     }
 
     public function detail($slug)
@@ -29,8 +25,15 @@ class Admin extends BaseController
             'blog' => $this->portoModel->getBlog($slug)
         ];
 
-        return view('/admin/detail', $data);
+        return view('admin/detail', $data);
     }
+
+    public function dashboard()
+{
+    $model = new PortoModel(); // Pastikan model ini sudah Anda buat
+    $data['porto'] = $model->findAll(); // Mengambil semua data portofolio
+    return view('admin/dashboard', $data);
+}
 
     public function create()
     {
@@ -39,29 +42,26 @@ class Admin extends BaseController
             'validation' => session('validation') ?? \Config\Services::validation()
         ];
 
-        return view('/admin/create', $data);
+        return view('admin/create', $data);
     }
 
     public function save()
     {
-        $model = new PortoModel();
-    
         $data = [
             'judul' => $this->request->getPost('judul'),
             'deskripsi' => $this->request->getPost('deskripsi'),
             'gambar' => $this->request->getFile('gambar')->getName(),
-            // tambahkan field lain jika diperlukan
         ];
-    
+
         // Proses upload gambar
         $gambar = $this->request->getFile('gambar');
         if ($gambar->isValid() && !$gambar->hasMoved()) {
             $gambar->move('img/gambar');
         }
-    
-        $model->save($data);
-        return redirect()->to('/admin/portofolio');
-    }    
+
+        $this->portoModel->save($data);
+        return redirect()->to('/admin');
+    }
 
     public function delete($id)
     {
@@ -78,7 +78,7 @@ class Admin extends BaseController
             'blog' => $this->portoModel->asArray()->where('slug', $slug)->first()
         ];
 
-        return view('/admin/edit', $data);
+        return view('admin/edit', $data);
     }
 
     public function update($id)
@@ -94,18 +94,6 @@ class Admin extends BaseController
         ]);
 
         session()->setFlashdata('pesan', 'Data berhasil diubah.');
-
         return redirect()->to('/admin');
-    }
-}
-
-class Portofolio extends BaseController
-{
-    public function index()
-    {
-        $model = new PortoModel();
-        $data['blog'] = $model->findAll(); // ambil semua data blog
-
-        return view('portofolio', $data); // kirim ke view
     }
 }

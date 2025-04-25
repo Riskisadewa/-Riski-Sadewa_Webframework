@@ -4,7 +4,7 @@
 <div class="container mt-5">
     <h2>Tambah Blog Baru</h2>
 
-    <form action="<?= base_url('admin/portofolio/save') ?>" method="POST" enctype="multipart/form-data">
+    <form action="<?= base_url('admin/save') ?>" method="post" enctype="multipart/form-data">
         <?= csrf_field(); ?>
 
         <div class="mb-3">
